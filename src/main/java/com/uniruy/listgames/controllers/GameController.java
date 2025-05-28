@@ -20,12 +20,6 @@ import com.uniruy.listgames.services.GameService;
 @RestController
 @RequestMapping(value = "/games")
 public class GameController {
-	
-    @GetMapping("/")
-    public String hello() {
-        return "API online!";
-    }
-	
 	// Injeção de dependência do Componente Service
 	@Autowired
 	public GameService  gameService;
