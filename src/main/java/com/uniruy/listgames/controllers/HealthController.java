@@ -8,6 +8,6 @@ public class HealthController {
 
     @GetMapping("/")
     public String root() {
-        return "ListGames API is running!";
+        return "ListGames API em produção!";
     }
 }
