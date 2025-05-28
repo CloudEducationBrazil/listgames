@@ -3,11 +3,9 @@ package com.uniruy.listgames.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
 
 import com.uniruy.listgames.entities.GameList;
 
-@Repository
 public interface GameListRepository extends JpaRepository<GameList, Long> {
 	@Modifying
 	@Query(nativeQuery = true, 
