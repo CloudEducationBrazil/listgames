@@ -1,5 +1,8 @@
 package com.uniruy.listgames.controllers;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +20,7 @@ import com.uniruy.listgames.dto.GameDTO;
 import com.uniruy.listgames.dto.GameMinDTO;
 import com.uniruy.listgames.services.GameService;
 
+
 @RestController
 @RequestMapping(value = "/games")
 public class GameController {
@@ -26,6 +30,7 @@ public class GameController {
 	
 	// Endpoint Consultar Todos - protocolo HTTP: Método Get
 	@GetMapping
+	// @Operation(summary = "Retorna uma saudação")
 	public List<GameMinDTO> getAllGame(){
 		return gameService.getAllGame();
 	}
