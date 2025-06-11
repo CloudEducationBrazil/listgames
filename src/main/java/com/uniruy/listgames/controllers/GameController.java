@@ -1,7 +1,7 @@
 package com.uniruy.listgames.controllers;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.tags.Tag;
+//import io.swagger.v3.oas.annotations.Operation;
+//import io.swagger.v3.oas.annotations.tags.Tag;
 
 import java.util.List;
 
@@ -23,7 +23,7 @@ import com.uniruy.listgames.services.GameService;
 
 @RestController
 @RequestMapping(value = "/games")
-@Tag(name = "Meu Controller", description = "Exemplo de documentação")
+//@Tag(name = "Meu Controller", description = "Exemplo de documentação")
 public class GameController {
 	// Injeção de dependência do Componente Service
 	@Autowired
@@ -31,7 +31,7 @@ public class GameController {
 	
 	// Endpoint Consultar Todos - protocolo HTTP: Método Get
 	@GetMapping
-    @Operation(summary = "Retorna uma saudação")
+ //   @Operation(summary = "Retorna uma saudação")
 	public List<GameMinDTO> getAllGame(){
 		return gameService.getAllGame();
 	}
