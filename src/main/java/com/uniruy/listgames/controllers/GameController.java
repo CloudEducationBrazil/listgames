@@ -23,6 +23,7 @@ import com.uniruy.listgames.services.GameService;
 
 @RestController
 @RequestMapping(value = "/games")
+@Tag(name = "Meu Controller", description = "Exemplo de documentação")
 public class GameController {
 	// Injeção de dependência do Componente Service
 	@Autowired
@@ -30,7 +31,7 @@ public class GameController {
 	
 	// Endpoint Consultar Todos - protocolo HTTP: Método Get
 	@GetMapping
-	// @Operation(summary = "Retorna uma saudação")
+    @Operation(summary = "Retorna uma saudação")
 	public List<GameMinDTO> getAllGame(){
 		return gameService.getAllGame();
 	}
