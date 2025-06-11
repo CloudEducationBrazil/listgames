@@ -72,7 +72,7 @@
 
 	<profiles>
 		<profile>
-			<id>test</id>
+			<id>prod</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
